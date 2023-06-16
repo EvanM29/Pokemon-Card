@@ -22,6 +22,7 @@ function openPack(){
     for(let i = 0; i<11; i++){
         let cardDiv = document.createElement("div");
         cardDiv.classList.add("card");
+        cardDiv.style.animationDelay = `${i * 0.2}s`; // Delay each card animation so it flows out like an actual pack
 
         let cardImg = document.createElement("img"); //create an img
         cardImg.id = i; //id starts at 0 and will increment as needed 
